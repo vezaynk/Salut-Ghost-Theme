@@ -1,0 +1,18 @@
+{{!< default}}
+        <div class="container">
+
+        {{#foreach posts}}
+            <div class="box">
+            <img class="box-image" src="{{image}}"/>
+            <a href="{{url}}">
+                <span class="caption scale-caption">
+                <h3>{{{title}}} <span>by {{#author}}{{name}}{{/author}}</span></h3>
+                <p>{{excerpt words="500"}}</p>
+                </span>
+            </a>
+            </div>
+        {{/foreach}}
+
+        </div>
+
+        {{pagination}}

@@ -1,0 +1,31 @@
+<html>
+  <head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {{! Styles for Salut }}
+  <link href='http://fonts.googleapis.com/css?family=Raleway:600,700,400' rel='stylesheet' type='text/css'>
+  <link href="{{asset "menu.css"}}" rel="stylesheet" type="text/css" media="screen" />
+  <link href="{{asset "style.css"}}" rel="stylesheet" type="text/css" media="screen" />
+  <link href="{{asset "responsive.css"}}" rel="stylesheet" type="text/css" media="screen" />
+  </head>
+  <body>
+<div id='cssmenu'>
+{{> menu}}
+</div>
+  {{> header}}
+<center>
+    {{{body}}}
+<center>
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
+
+{{! Javascript files for Salut }}
+<script src="{{asset "scripts.js"}}"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@media all and (max-width: 1250px) {
+    #cssmenu{
+        top: 0;
+        left: 0;
+    }
+}
+@media all and (max-width: 1160px) {
+    .container{
+        margin-left: 175px;
+        width: calc(100% - 225px);
+    }
+}
+@media all and (max-width: 775px) {
+    #cssmenu, #cssmenu > ul{
+        width: 150px;
+    }
+    .container{
+        margin-left: 125px;
+        width: calc(100% - 175px);
+    }
+}
+@media all and (max-width: 550px) {
+    #menulabel{
+        display: block;
+    }
+    #cssmenu{
+        height: 45px;
+        overflow: hidden;
+        width: 70px;
+    }
+   #cssmenu.show{
+        height: auto;
+        width: auto;
+        overflow: auto;
+    }
+    #cssmenu.show #menulabel{
+        height: 1px;
+        width: 1px;
+        opacity: 0.01;
+    }
+    .container{
+        margin-left: 20px;
+        width: calc(100% - 75px);
+    }
+}
