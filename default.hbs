@@ -27,5 +27,13 @@
 
 {{! Javascript files for Salut }}
 <script src="{{asset "scripts.js"}}"></script>
+<script>
+$("a[href^='http://'], a[href^='https://']").click(function(){
+  $(this).attr("target","_blank");
+});
+$("a[href^='{{@blog.url}}']").click(function(){
+  $(this).attr("target","_self");
+});
+</script>
 </body>
 </html>

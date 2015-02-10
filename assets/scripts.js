@@ -20,7 +20,8 @@
 
 $( "#menulabel" ).click(function() {
   $("#cssmenu").toggleClass( "show" );
+  $("#menulabel").toggleClass( "active" );
 });
-$( "#cssmenu" ).mouseout(function() {
+/*$( "#cssmenu" ).mouseout(function() {
   $("#cssmenu").toggleClass( "show" );
-});
+});*/
